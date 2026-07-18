@@ -1,0 +1,17 @@
+Hexamove — modifications effectuées
+
+- Téléphone public : +33 7 46 73 86 56
+- Numéro WhatsApp : +33 7 46 73 86 56
+- E-mail public : Contact@hexamove.fr
+- E-mail destinataire des demandes : devis@hexamove.fr
+- Formulaire de devis déplacé en première position, juste après l'en-tête du site.
+- Valeurs mises à jour dans .env, .env.example, README.md et le serveur.
+
+Important : pour envoyer réellement les demandes par e-mail, configurez GMAIL_USER et GMAIL_APP_PASSWORD dans .env, puis redémarrez le serveur.
+
+- Fixed favicon/logo display in the browser tab by serving all icon files from the Node server.
+- Added direct call buttons in the header, hero section, success panel, and as a floating quick-action button.
+- Added favicon links to quote.html for consistent branding across pages.
+
+- Embedded the favicon directly in both HTML pages so it works even when the site is hosted in a subfolder or the root favicon path is unavailable.
+- Added cache-busting icon URLs and a web app manifest.

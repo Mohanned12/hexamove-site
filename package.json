@@ -1,0 +1,21 @@
+{
+  "name": "hexamove-reservation-site",
+  "version": "11.0.0",
+  "private": true,
+  "description": "Site européen de réservation de transport avec devis, WhatsApp et notifications e-mail complètes configurables",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check script.js && node --check quote.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemailer": "^9.0.3"
+  }
+}

@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Transport avec chauffeur, déménagement, livraison de meubles et objets encombrants. Demandez gratuitement votre devis en ligne.">
+  <meta name="theme-color" content="#071a2f">
+  <title>Hexamove | Transport & déménagement avec chauffeur</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=3">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="manifest" href="./site.webmanifest?v=3">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p><span class="status-dot" aria-hidden="true"></span> Devis gratuit · Contact sous 1 heure</p>
+      <p class="topbar-area" data-business-area>France · Belgique · Suisse · Luxembourg · Toute l’Europe</p>
+    </div>
+  </div>
+
+  <header class="navbar" id="top">
+    <div class="container nav-container">
+      <a class="logo" href="#top" aria-label="Accueil Hexamove">
+        <img class="logo-image" src="assets/hexamove-logo.png" alt="Hexamove">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="main-navigation" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#process">Comment ça marche</a>
+        <a href="#zones">Zones</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+33746738656" class="btn btn-secondary nav-call phone-link" data-business-phone-short>Appeler</a>
+        <a href="#reservation" class="btn btn-primary nav-cta">Demander un devis</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="reservation" class="section reservation-section">
+      <div class="container reservation-grid">
+        <div class="reservation-copy reveal">
+          <span class="eyebrow eyebrow-light">Demande gratuite</span>
+          <h2>Parlez-nous de votre transport</h2>
+          <p>Complétez vos informations et choisissez deux adresses en Europe. La distance routière sera calculée automatiquement avant l’affichage des véhicules et du prix.</p>
+
+          <div class="contact-panel">
+            <div class="contact-icon" aria-hidden="true">☎</div>
+            <div>
+              <small>Besoin de parler directement ?</small>
+              <a class="phone-link" href="tel:+33746738656" data-business-phone>+33 7 46 73 86 56</a>
+            </div>
+          </div>
+
+          <ul class="reservation-benefits">
+            <li><span>✓</span> Prix calculé avant confirmation</li>
+            <li><span>✓</span> Vos informations servent uniquement à traiter la demande</li>
+            <li><span>✓</span> Choix du véhicule et des options à l’étape suivante</li>
+          </ul>
+        </div>
+
+        <div class="form-card reveal delay-one">
+          <form id="reservation-form" novalidate>
+            <div class="form-header">
+              <div><span>Étape 1 sur 2</span><h3>Votre trajet</h3></div>
+              <span class="secure-note">Formulaire sécurisé</span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom et prénom <span>*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required placeholder="Jean Dupont">
+              </div>
+              <div class="form-group">
+                <label for="phone">Téléphone <span>*</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" maxlength="30" required placeholder="06 12 34 56 78">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail <small>(facultatif)</small></label>
+              <input type="email" id="email" name="email" autocomplete="email" maxlength="120" placeholder="jean@exemple.fr">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="serviceType">Prestation <span>*</span></label>
+                <select id="serviceType" name="serviceType" required>
+                  <option value="">Sélectionnez</option>
+                  <option value="Déménagement">Déménagement</option>
+                  <option value="Livraison">Livraison</option>
+                  <option value="Meubles et électroménager">Meubles et électroménager</option>
+                  <option value="Longue distance">Longue distance</option>
+                  <option value="Autre">Autre besoin</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">Date souhaitée <span>*</span></label>
+                <input type="date" id="date" name="date" required>
+              </div>
+            </div>
+
+            <div class="form-group address-group">
+              <label for="pickup">Adresse de départ en Europe <span>*</span></label>
+              <span class="address-dot start-dot" aria-hidden="true"></span>
+              <input type="text" id="pickup" name="pickup" autocomplete="off" spellcheck="false" maxlength="180" required placeholder="Commencez à saisir une adresse européenne" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pickup-suggestions">
+              <div id="pickup-suggestions" class="address-suggestions" role="listbox" hidden></div>
+              <div class="field-help">Sélectionnez une proposition pour valider l’adresse.</div>
+            </div>
+
+            <div class="form-group address-group">
+              <label for="destination">Adresse d’arrivée en Europe <span>*</span></label>
+              <span class="address-dot end-dot" aria-hidden="true"></span>
+              <input type="text" id="destination" name="destination" autocomplete="off" spellcheck="false" maxlength="180" required placeholder="Commencez à saisir une adresse européenne" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="destination-suggestions">
+              <div id="destination-suggestions" class="address-suggestions" role="listbox" hidden></div>
+              <div class="field-help">Sélectionnez une adresse européenne proposée. Données cartographiques © OpenStreetMap.</div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="time">Créneau souhaité <span>*</span></label>
+                <select id="time" name="time" required>
+                  <option value="">Sélectionnez</option>
+                  <option value="Matin (8h-12h)">Matin (8h–12h)</option>
+                  <option value="Après-midi (12h-17h)">Après-midi (12h–17h)</option>
+                  <option value="Flexible">Flexible</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Distance routière</label>
+                <div id="distance-preview" class="distance-preview" data-state="idle" aria-live="polite">
+                  <span class="distance-preview-icon" aria-hidden="true">↔</span>
+                  <span class="distance-preview-copy"><small>Calcul automatique</small><strong id="distance-value">Choisissez les deux adresses</strong></span>
+                </div>
+                <input type="hidden" id="distanceKm" name="distanceKm">
+                <input type="hidden" id="durationMinutes" name="durationMinutes">
+                <input type="hidden" id="routeToken" name="routeToken">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="volume">Volume estimé</label>
+              <select id="volume" name="volume">
+                <option value="">Je ne sais pas</option>
+                <option value="Quelques objets">Quelques objets</option>
+                <option value="Petit volume / studio">Petit volume / studio</option>
+                <option value="Appartement T2-T3">Appartement T2–T3</option>
+                <option value="Grand volume">Grand volume</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Détails utiles</label>
+              <textarea id="notes" name="notes" rows="4" maxlength="1200" placeholder="Étages, ascenseur, objets lourds, besoin d’aide, dimensions…"></textarea>
+              <div class="field-hint"><span id="notes-count">0</span>/1200 caractères</div>
+            </div>
+
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Site web</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <label class="consent-row">
+              <input type="checkbox" name="consent" value="yes" required>
+              <span>J’accepte d’être contacté au sujet de cette demande. <b>*</b></span>
+            </label>
+
+            <button id="submit-btn" class="btn btn-primary btn-submit" type="submit">
+              <span class="btn-text">Voir les véhicules et les prix</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero-shape hero-shape-one" aria-hidden="true"></div>
+      <div class="hero-shape hero-shape-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Transport en France et partout en Europe</span>
+          <h1>Votre transport avec chauffeur, <span>sans complication.</span></h1>
+          <p class="hero-lead">Déménagement, livraison de meubles, objets encombrants ou trajet international. Choisissez deux adresses en Europe et obtenez automatiquement la distance et le prix estimé.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#reservation">Obtenir mon devis</a>
+            <a class="btn btn-secondary btn-lg phone-link" href="tel:+33746738656" data-business-phone-href>Appeler maintenant</a>
+            <a class="btn btn-secondary btn-lg whatsapp-link is-hidden" href="#" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+          </div>
+
+          <ul class="hero-points" aria-label="Avantages">
+            <li><span>✓</span> Aucun paiement en ligne</li>
+            <li><span>✓</span> Devis confirmé avant le départ</li>
+            <li><span>✓</span> Service 7 jours sur 7</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal delay-one" aria-label="Illustration d'un service de transport">
+          <div class="visual-card">
+            <div class="route-head">
+              <span class="route-label">Votre trajet</span>
+              <span class="availability"><i></i> Disponible</span>
+            </div>
+            <div class="route-stop">
+              <span class="route-dot route-dot-start"></span>
+              <div>
+                <small>Départ</small>
+                <strong>Adresse de prise en charge</strong>
+              </div>
+            </div>
+            <div class="route-line"></div>
+            <div class="route-stop">
+              <span class="route-dot route-dot-end"></span>
+              <div>
+                <small>Arrivée</small>
+                <strong>Adresse de destination</strong>
+              </div>
+            </div>
+            <div class="vehicle-illustration" aria-hidden="true">
+              <svg viewBox="0 0 640 300" role="img">
+                <defs>
+                  <linearGradient id="vanBody" x1="0" x2="1">
+                    <stop offset="0" stop-color="#ffb000"/>
+                    <stop offset="1" stop-color="#ff7a00"/>
+                  </linearGradient>
+                </defs>
+                <path fill="#dce8f3" d="M20 253h600v18H20z"/>
+                <path fill="url(#vanBody)" d="M106 96h300c24 0 45 12 58 32l58 90h35c20 0 36 16 36 36v10H71v-93c0-41 16-75 35-75z"/>
+                <path fill="#f7fbff" d="M427 120c16 3 28 12 37 27l29 46h-76v-75z"/>
+                <path fill="#17324d" d="M417 118h8v77h-8zM493 193h22l9 18h-31z"/>
+                <rect width="72" height="37" x="120" y="124" rx="8" fill="#fff" opacity=".9"/>
+                <text x="137" y="149" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#071a2f">SUPER</text>
+                <circle cx="178" cy="256" r="38" fill="#12263b"/>
+                <circle cx="178" cy="256" r="17" fill="#e9f0f6"/>
+                <circle cx="497" cy="256" r="38" fill="#12263b"/>
+                <circle cx="497" cy="256" r="17" fill="#e9f0f6"/>
+                <path fill="#071a2f" d="M71 220h73a51 51 0 0 1 91 0h216a51 51 0 0 1 91 0h51v44h-58a38 38 0 0 0-76 0H216a38 38 0 0 0-76 0H71z" opacity=".18"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="floating-note floating-note-one">
+            <span class="note-icon">✓</span>
+            <div><strong>Demande reçue</strong><small>Contact dans l’heure</small></div>
+          </div>
+          <div class="floating-note floating-note-two">
+            <span class="note-icon note-icon-blue">7/7</span>
+            <div><strong>Service flexible</strong><small>Selon disponibilité</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Informations principales">
+      <div class="container trust-grid">
+        <div><strong>7j/7</strong><span>Service disponible</span></div>
+        <div><strong>Gratuit</strong><span>Demande de devis</span></div>
+        <div><strong>Direct</strong><span>Contact par téléphone</span></div>
+        <div><strong>Flexible</strong><span>Courte ou longue distance</span></div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Nos prestations</span>
+          <h2>Une solution pour chaque besoin de transport</h2>
+          <p>Vous indiquez ce qu’il faut transporter, les adresses et la date. Nous vous recontactons dans l’heure pour confirmer le véhicule, l’organisation et le tarif.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>
+            </div>
+            <h3>Déménagement</h3>
+            <p>Studio, appartement, maison ou petit volume, avec une organisation adaptée à votre trajet.</p>
+            <a href="#reservation" data-service="Déménagement">Demander un devis <span>→</span></a>
+          </article>
+
+          <article class="service-card reveal delay-one">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5zM12 5.3 18.7 9 12 12.7 5.3 9zM5 10.7l6 3.3v4.4l-6-3.3zm8 7.7V14l6-3.3v4.4z"/></svg>
+            </div>
+            <h3>Livraison express</h3>
+            <p>Colis, matériel ou marchandises à transporter rapidement d’un point A à un point B.</p>
+            <a href="#reservation" data-service="Livraison">Demander un devis <span>→</span></a>
+          </article>
+
+          <article class="service-card reveal delay-two">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v8h-2v5h-2v-5H7v5H5v-5H3V6a2 2 0 0 1 2-2zm0 2v6h14V6zm2 2h4v2H7z"/></svg>
+            </div>
+            <h3>Meubles & électroménager</h3>
+            <p>Transport d’achats en magasin, canapés, lits, machines ou autres objets encombrants.</p>
+            <a href="#reservation" data-service="Meubles et électroménager">Demander un devis <span>→</span></a>
+          </article>
+
+          <article class="service-card reveal delay-three">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 6h11v9H3zm12 3h3l3 3v3h-6zm-9 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm12 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+            </div>
+            <h3>Longue distance</h3>
+            <p>Trajets entre villes et pays européens, selon votre besoin et la disponibilité.</p>
+            <a href="#reservation" data-service="Longue distance">Demander un devis <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="container process-grid">
+        <div class="process-copy reveal">
+          <span class="eyebrow eyebrow-light">Simple du début à la fin</span>
+          <h2>Votre réservation en trois étapes</h2>
+          <p>Pas de compte à créer et pas de paiement bancaire sur le site. Votre demande est vérifiée avant confirmation.</p>
+          <a href="#reservation" class="text-link">Commencer ma demande <span>→</span></a>
+        </div>
+
+        <ol class="process-list">
+          <li class="reveal">
+            <span class="step-number">01</span>
+            <div><h3>Décrivez le trajet</h3><p>Ajoutez vos adresses, la date, le type de service et les informations utiles.</p></div>
+          </li>
+          <li class="reveal delay-one">
+            <span class="step-number">02</span>
+            <div><h3>Recevez notre appel</h3><p>Notre équipe vous contacte dans l’heure pour vérifier les détails et confirmer le prix avant l’intervention.</p></div>
+          </li>
+          <li class="reveal delay-two">
+            <span class="step-number">03</span>
+            <div><h3>Le transport est organisé</h3><p>Le chauffeur se présente au lieu et à l’heure convenus.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="zones" class="section zones-section">
+      <div class="container zones-grid">
+        <div class="zones-visual reveal" aria-hidden="true">
+          <div class="map-card">
+            <div class="map-ring ring-one"></div>
+            <div class="map-ring ring-two"></div>
+            <div class="map-ring ring-three"></div>
+            <span class="map-pin pin-main"></span>
+            <span class="map-pin pin-small pin-one"></span>
+            <span class="map-pin pin-small pin-two"></span>
+            <span class="map-pin pin-small pin-three"></span>
+            <div class="map-label">Europe</div>
+          </div>
+        </div>
+
+        <div class="zones-copy reveal delay-one">
+          <span class="eyebrow">Zone d’intervention</span>
+          <h2>Transport en France et dans toute l’Europe</h2>
+          <p>Nous calculons les trajets routiers entre adresses européennes. Indiquez le départ et l’arrivée pour obtenir automatiquement la distance et un prix estimé.</p>
+          <div class="feature-list">
+            <div><span>✓</span><p><strong>France</strong><small>Départs et arrivées partout en France</small></p></div>
+            <div><span>✓</span><p><strong>Pays voisins</strong><small>Belgique, Suisse, Luxembourg, Allemagne, Italie, Espagne…</small></p></div>
+            <div><span>✓</span><p><strong>Toute l’Europe</strong><small>Trajets internationaux selon disponibilité</small></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="container faq-grid">
+        <div class="section-heading faq-heading reveal">
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2>Ce qu’il faut savoir avant de réserver</h2>
+          <p>Une question différente ? Contactez-nous directement par téléphone ou WhatsApp.</p>
+        </div>
+
+        <div class="faq-list reveal delay-one">
+          <details>
+            <summary>Le devis est-il gratuit ? <span>+</span></summary>
+            <p>Oui. L’envoi du formulaire ne déclenche aucun paiement. Le prix est confirmé avec vous avant l’intervention.</p>
+          </details>
+          <details>
+            <summary>Puis-je réserver pour aujourd’hui ? <span>+</span></summary>
+            <p>Une intervention le jour même peut être étudiée selon l’heure, le trajet, le véhicule nécessaire et les disponibilités.</p>
+          </details>
+          <details>
+            <summary>Faites-vous les trajets internationaux ? <span>+</span></summary>
+            <p>Oui, les trajets entre villes et pays européens peuvent être proposés selon la disponibilité.</p>
+          </details>
+          <details>
+            <summary>Que dois-je indiquer dans les détails ? <span>+</span></summary>
+            <p>Précisez les étages, l’ascenseur, les objets lourds ou fragiles, le volume et si vous avez besoin d’aide pour charger ou décharger.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <div><span>Un transport à organiser ?</span><h2>Recevez une réponse adaptée à votre trajet.</h2></div>
+        <a class="btn btn-light btn-lg" href="#reservation">Demander mon devis</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo logo-footer" href="#top" aria-label="Accueil Hexamove">
+          <img class="logo-image logo-image-footer" src="assets/hexamove-logo.png" alt="Hexamove">
+        </a>
+        <p>Transport avec chauffeur, déménagement et livraison selon vos besoins.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul><li><a href="#services">Services</a></li><li><a href="#process">Fonctionnement</a></li><li><a href="#reservation">Demander un devis</a></li></ul>
+      </div>
+      <div>
+        <h3>Intervention</h3>
+        <ul><li data-business-area>France et Europe</li><li>Trajets internationaux sur demande</li><li data-business-hours>7j/7 · 8h–17h</li></ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul><li><a class="phone-link" href="tel:+33746738656" data-business-phone>+33 7 46 73 86 56</a></li><li><a class="email-link" href="mailto:Contact@hexamove.fr" data-business-email>Contact@hexamove.fr</a></li><li><a class="whatsapp-link is-hidden" href="#" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="current-year"></span> <span data-business-name-text>Hexamove</span>. Tous droits réservés.</p>
+      <p>Les demandes envoyées sur ce site ne constituent pas une réservation définitive avant confirmation.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-actions" aria-label="Actions rapides">
+    <a class="phone-link mobile-call" href="tel:+33746738656" data-business-phone-short>Appeler</a>
+    <a href="#reservation" class="mobile-quote">Devis gratuit</a>
+  </div>
+  <a class="floating-call phone-link" href="tel:+33746738656" data-business-phone-href aria-label="Appeler Hexamove directement">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M6.62 10.79a15.47 15.47 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.49c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.19 2.2Z"/>
+    </svg>
+    <span>Appeler</span>
+  </a>
+  <a class="floating-whatsapp whatsapp-link is-hidden" href="#" target="_blank" rel="noopener" aria-label="Contacter Hexamove sur WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path fill="currentColor" d="M16.04 3.2A12.76 12.76 0 0 0 5.1 22.55L3.2 28.8l6.41-1.82A12.8 12.8 0 1 0 16.04 3.2Zm0 2.56a10.23 10.23 0 0 1 8.88 15.32 10.25 10.25 0 0 1-14.38 3.7l-.46-.27-3.8 1.08 1.12-3.7-.3-.48a10.24 10.24 0 0 1 8.94-15.65Zm-4.78 4.58c-.2 0-.52.08-.8.39-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.2 3.07.15.2 2.08 3.18 5.04 4.46.7.3 1.25.49 1.68.62.7.22 1.35.19 1.85.12.57-.08 1.74-.72 1.99-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35-.3-.15-1.74-.86-2.01-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a9 9 0 0 1-1.66-2.06c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57Z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+</body>
+</html>
