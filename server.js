@@ -388,19 +388,23 @@ function isPlaceholderEmailConfig(value) {
 function emailIsConfigured() {
   return Boolean(
     getReservationRecipients().length > 0 &&
-    !isPlaceholderEmailConfig(process.env.GMAIL_USER) &&
-    process.env.GMAIL_APP_PASSWORD &&
-    !isPlaceholderEmailConfig(process.env.GMAIL_APP_PASSWORD) &&
-    process.env.GMAIL_APP_PASSWORD.replace(/\s/g, "").length >= 16
+    !isPlaceholderEmailConfig(process.env.SMTP_HOST) &&
+    !isPlaceholderEmailConfig(process.env.SMTP_USER) &&
+    process.env.SMTP_PASS &&
+    !isPlaceholderEmailConfig(process.env.SMTP_PASS)
   );
 }
 
+const SENDER_EMAIL = (process.env.SMTP_USER || "").trim();
+
 const transporter = emailIsConfigured()
   ? nodemailer.createTransport({
-      service: "gmail",
+      host: process.env.SMTP_HOST.trim(),
+      port: Number(process.env.SMTP_PORT) || 587,
+      secure: Number(process.env.SMTP_PORT) === 465,
       auth: {
-        user: process.env.GMAIL_USER.trim(),
-        pass: process.env.GMAIL_APP_PASSWORD.replace(/\s/g, "")
+        user: SENDER_EMAIL,
+        pass: process.env.SMTP_PASS
       }
     })
   : null;
@@ -458,7 +462,7 @@ async function sendReservationEmails(reservation) {
   const replyEmail = reservation.email || "";
 
   await transporter.sendMail({
-    from: `"${businessName} - Site" <${process.env.GMAIL_USER.trim()}>`,
+    from: `"${businessName} - Site" <${SENDER_EMAIL}>`,
     to: recipients.join(", "),
     replyTo: replyEmail || undefined,
     subject: `Nouvelle demande ${reservation.reservationId} · ${safe.total} · ${reservation.name}`,
@@ -517,7 +521,7 @@ async function sendReservationEmails(reservation) {
 
   if (reservation.email) {
     await transporter.sendMail({
-      from: `"${businessName}" <${process.env.GMAIL_USER.trim()}>`,
+      from: `"${businessName}" <${SENDER_EMAIL}>`,
       to: reservation.email,
       subject: `Votre demande ${reservation.reservationId} a bien été reçue`,
       text: `Bonjour ${reservation.name},\n\nVotre demande a bien été reçue.\n\nRéférence : ${reservation.reservationId}\nVéhicule : ${price.vehicleName}\nDistance : ${price.distanceKm} km\nManutention : ${price.handlingName}\nTemps : ${price.loadingTimeName}\nPrix estimé : ${price.totalPrice.toFixed(2)} €\n\nNotre équipe vous contactera au ${reservation.phone} dans un délai d’une heure pour confirmer les détails. Cette demande ne constitue pas encore une réservation définitive.\n\n${businessName}`
@@ -719,5 +723,5 @@ app.listen(PORT, () => {
   console.log(`Hexamove is running on http://localhost:${PORT}`);
   console.log(emailIsConfigured()
     ? `Email notifications are enabled for ${getReservationRecipients().join(", ")}.`
-    : "Email is not configured: set RESERVATION_EMAIL, GMAIL_USER and GMAIL_APP_PASSWORD in .env. Reservations will still be saved in data/reservations.jsonl.");
+    : "Email is not configured: set RESERVATION_EMAIL, SMTP_HOST, SMTP_USER and SMTP_PASS in .env. Reservations will still be saved in data/reservations.jsonl.");
 });
